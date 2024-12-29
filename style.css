@@ -1,0 +1,180 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #f0f0f0;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* تسجيل الدخول */
+
+#login-section {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+#login-section form {
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#login-section input,
+#login-section button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background: #2a2a2a;
+    color: #f0f0f0;
+    font-size: 1rem;
+}
+
+#login-section button {
+    background: #bb86fc;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+#login-section button:hover {
+    background: #a45cd3;
+    transform: scale(1.05);
+}
+
+
+/* التطبيق */
+
+#app {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* العناوين */
+
+h1,
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #bb86fc;
+}
+
+
+/* الجداول */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #1e1e1e;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+table th,
+table td {
+    padding: 10px 15px;
+    text-align: left;
+    border: 1px solid #333;
+}
+
+table th {
+    background: #2a2a2a;
+    color: #bb86fc;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+table td {
+    color: #f0f0f0;
+}
+
+table td button {
+    background: none;
+    border: none;
+    color: #ff4d4d;
+    font-size: 0.9rem;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: color 0.3s, transform 0.2s;
+}
+
+table td button:hover {
+    color: #d43b3b;
+    transform: scale(1.1);
+}
+
+
+/* تحسين للجوال */
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    #login-section form {
+        max-width: 300px;
+        padding: 15px;
+    }
+    #login-section input,
+    #login-section button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+    table th,
+    table td {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    #app {
+        padding: 15px;
+    }
+}
+
+
+/* أزرار الصلاحيات */
+
+.admin-only {
+    display: none;
+}
+
+body.admin .admin-only {
+    display: table-cell;
+}
+
+
+/* تحسين الأزرار */
+
+button {
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
